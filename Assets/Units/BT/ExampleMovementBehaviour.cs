@@ -40,9 +40,8 @@ namespace Units.BT
 										new ReachedDestination(),
 										new WaitSeconds(1));
 
-			var repeatPatrol = new Repeater(movement);
-			var walking = new Sequence(repeatPatrol);
-			return walking;
+			var repeatMovement = new Repeater(movement);
+			return new Sequence(repeatMovement);
 		}
 	}
 }

@@ -41,9 +41,7 @@ namespace Units.BT
 										  new ReachedDestination());
 
 
-			
-			var walking = new Sequence(moveToUnit, rndMovement);
-			return walking;
+			return new Sequence(moveToUnit, rndMovement);
 		}
 
 		private void OnDrawGizmosSelected()
