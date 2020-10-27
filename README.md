@@ -12,6 +12,6 @@ public override Node Tree()
 								new Patrol(PatrolPoints, transform.position),
 								new ReachedDestination(),
 								new WaitSeconds(1));
-	var reapatMovement = new Repeater(movement);
-	return new Sequence(reapatMovement)
+	var repeatMovement = new Repeater(movement);
+	return new Sequence(repeatMovement)
 ```
